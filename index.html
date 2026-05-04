@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Daily Digest — Private Podcast Feed</title>
+<style>
+body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.5; color: #222; }
+h1 { font-size: 24px; }
+.feed-url { background: #f5f5f5; padding: 12px; border-radius: 4px; word-break: break-all; font-family: monospace; }
+.episode { border-left: 3px solid #1db954; padding: 10px 16px; background: #f3fdf6; margin: 16px 0; border-radius: 4px; }
+audio { width: 100%; margin-top: 8px; }
+small { color: #888; }
+</style>
+</head>
+<body>
+<h1>Daily Digest — Private Podcast Feed</h1>
+<p>This is a private podcast feed for daily investment + health digest audio.</p>
+
+<h3>RSS feed URL (paste into Spotify "Add Podcast by RSS" or any podcast app):</h3>
+<div class="feed-url" id="rss"></div>
+
+<h3>Latest episode</h3>
+<div class="episode">
+  <strong>Daily Digest — Monday, May 4, 2026 (Test #2)</strong><br>
+  <small>Duration ~52 min · Published May 4, 2026 9:15 UTC</small>
+  <audio controls preload="none" src="digest_2026-05-04.mp3"></audio>
+  <p><a href="digest_2026-05-04.mp3" download>Download MP3</a></p>
+</div>
+
+<script>
+document.getElementById('rss').textContent = location.origin + location.pathname.replace(/\/?$/, '/') + 'feed.xml';
+</script>
+
+</body>
+</html>
